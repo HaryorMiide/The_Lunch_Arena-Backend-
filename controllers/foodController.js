@@ -95,6 +95,7 @@ const getFoods = async (req, res) => {
     res.status(500).json({
       status: "error",
       message: "Could not fetch foods.",
+      error: err.message, 
     });
   }
 };
